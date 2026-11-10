@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rankability carousel: What 48 months of search demand shows (v2)</title>
+<link rel="stylesheet" href="carousel.css">
+<style>
+  /* ---------- Slide 1: cover ---------- */
+  #s1 { --gx: 84%; --gy: 72%; }
+  #s1 .h { font-size: 96px; }
+  #s1 .sub { top: 452px; }
+  #s1 .rule { top: 850px; }
+
+  /* ---------- Slide 2 ---------- */
+  #s2 { --gx: 60%; --gy: 62%; }
+  #s2 .sub { top: 428px; right: 280px; }
+  #s2 .chart { top: 700px; }
+  #s2 .src { top: 1050px; }
+
+  /* ---------- Slide 3 ---------- */
+  #s3 { --gx: 66%; --gy: 20%; }
+  #s3 .h { right: auto; width: 560px; font-size: 80px; }
+  #s3 .sub { right: auto; width: 440px; top: 500px; }
+  #s3 .chart { left: auto; right: var(--m); top: 110px; width: 420px; }
+  #s3 .src { right: auto; width: 480px; top: 1050px; }
+
+  /* ---------- Slide 4 ---------- */
+  #s4 { --gx: 84%; --gy: 16%; }
+  #s4 .chart { top: 112px; }
+  #s4 .src { top: 560px; }
+  #s4 .h { top: 760px; }
+  #s4 .sub { top: 986px; right: 200px; }
+
+  /* ---------- Slide 5 ---------- */
+  #s5 { --gx: 12%; --gy: 52%; }
+  #s5 .h { font-size: 96px; }
+  #s5 .limits { top: 640px; }
+  #s5 .limits p { position: relative; border-top: 2px solid rgba(255, 255, 255, .22); padding: 30px 0 36px;
+    font-size: 36px; line-height: 1.32; letter-spacing: -0.005em; color: #fff; font-weight: 400; }
+  #s5 .limits p:first-child::before { content: ""; position: absolute; left: 0; top: -3px; width: 64px; height: 4px;
+    background: var(--blue); box-shadow: 0 0 8px rgba(30, 99, 255, .95), 0 0 20px rgba(30, 99, 255, .7); }
+
+  /* ---------- Slide 6 ---------- */
+  #s6 { --gx: 78%; --gy: 80%; }
+  #s6 .h { font-size: 112px; }
+  #s6 .sub { top: 900px; right: 220px; }
+  #s6 .cta { top: 1048px; display: flex; align-items: center; gap: 24px;
+    font-size: 40px; font-weight: 500; letter-spacing: -0.015em; color: #fff; }
+</style>
+</head>
+<body>
+
+<!--
+  COPY: every headline and supporting line below is the approved copy from the Asana card,
+  word for word. Only line breaks, hierarchy and typographic apostrophes are design choices.
+  CHART FURNITURE (labels, source captions) uses only words and figures that are on the card.
+  MARKS: fine ticks, counted or measured to scale from a figure on the card. One blue mark per slide.
+-->
+
+<!-- ============ 1 ============ -->
+<section class="slide" id="s1">
+  <h1 class="h">What 48 months<br>of search demand<br>says about SEO</h1>
+  <p class="abs sub">3,751 keywords, June 2022 to May 2026</p>
+
+  <!-- 48 ticks = 48 months (pitch 19.1915px). Taller ticks = each June (months 1, 13, 25, 37).
+       The blue tick is month 48, May 2026. No data is plotted. -->
+  <svg class="abs rule" width="904" height="290" viewBox="0 0 904 290" aria-hidden="true">
+    <line x1="0" y1="165" x2="900" y2="165" stroke="#fff" stroke-opacity=".5" stroke-width="110" stroke-dasharray="2 17.1915"/>
+    <line x1="0" y1="130" x2="900" y2="130" stroke="#fff" stroke-width="180" stroke-dasharray="2 228.298"/>
+    <line class="accent" x1="902" y1="10" x2="902" y2="220"/>
+    <text class="lab2" x="0" y="272">June 2022</text>
+    <text class="lab" x="904" y="272" text-anchor="end">May 2026</text>
+  </svg>
+
+  <footer class="sig">
+    <img src="assets/rankability-logo-white.png" alt="Rankability">
+    <div class="folio"><span>1 / 6</span>
+      <svg width="62" height="30" viewBox="0 0 62 30"><rect class="t on" x="0" y="0" width="2" height="30"/><rect class="t" x="12" y="12" width="2" height="18"/><rect class="t" x="24" y="12" width="2" height="18"/><rect class="t" x="36" y="12" width="2" height="18"/><rect class="t" x="48" y="12" width="2" height="18"/><rect class="t" x="60" y="12" width="2" height="18"/></svg>
+    </div>
+  </footer>
+</section>
+
+<!-- ============ 2 ============ -->
+<section class="slide" id="s2">
+  <h2 class="h">SEO-related demand<br>fell 30% from<br>its 2025 peak</h2>
+  <p class="abs sub">The first sustained decline in the four years we measured</p>
+
+  <!-- 50 ticks = the 2025 peak; each tick is 2% (pitch 18.408px). 35 remain (70%), 15 are ghosted (the 30% fall).
+       The blue tick is tick 35, where demand stands. -->
+  <svg class="abs chart" width="904" height="290" viewBox="0 0 904 290" role="img" aria-label="Fifty ticks for the 2025 peak; the last fifteen, 30 percent, are faded">
+    <line x1="0" y1="165" x2="608" y2="165" stroke="#fff" stroke-opacity=".85" stroke-width="130" stroke-dasharray="2 16.408"/>
+    <line x1="644.28" y1="165" x2="904" y2="165" stroke="#fff" stroke-opacity=".2" stroke-width="130" stroke-dasharray="2 16.408"/>
+    <line class="accent" x1="626.87" y1="60" x2="626.87" y2="230"/>
+    <line class="scale" x1="645" y1="60" x2="903" y2="60"/>
+    <text class="lab" x="774" y="38" text-anchor="middle">−30%</text>
+    <text class="lab2" x="904" y="272" text-anchor="end">2025 peak</text>
+  </svg>
+
+  <p class="abs src">Source: Rankability, 3,751 keywords,<br>June 2022 to May 2026. rankability.com</p>
+
+  <footer class="sig">
+    <img src="assets/rankability-logo-white.png" alt="Rankability">
+    <div class="folio"><span>2 / 6</span>
+      <svg width="62" height="30" viewBox="0 0 62 30"><rect class="t" x="0" y="12" width="2" height="18"/><rect class="t on" x="12" y="0" width="2" height="30"/><rect class="t" x="24" y="12" width="2" height="18"/><rect class="t" x="36" y="12" width="2" height="18"/><rect class="t" x="48" y="12" width="2" height="18"/><rect class="t" x="60" y="12" width="2" height="18"/></svg>
+    </div>
+  </footer>
+</section>
+
+<!-- ============ 3 ============ -->
+<section class="slide" id="s3">
+  <h2 class="h">AI-agent<br>demand grew<br>21.7x in<br>three years</h2>
+  <p class="abs sub">General AI search demand grew 3.6x over the same three years</p>
+
+  <!-- Two fine lines to scale: 1 unit = 40px = 1x (the starting level). 21.7 units and 3.6 units.
+       Scale ticks: one per 1x, 0 to 21. The blue cap marks 21.7x. -->
+  <svg class="abs chart" width="420" height="1000" viewBox="0 0 420 1000" role="img" aria-label="Lines to scale: AI-agent demand 21.7x, general AI search demand 3.6x">
+    <g class="scale" id="units"></g>
+    <line class="scale" x1="40" y1="950" x2="420" y2="950"/>
+    <text class="lab2" x="28" y="920" text-anchor="end">1x</text>
+
+    <line class="tick" x1="120" y1="82" x2="120" y2="950" stroke-width="3"/>
+    <line class="accent" x1="98" y1="82" x2="142" y2="82"/>
+    <text class="lab" x="164" y="92">21.7x</text>
+    <text class="lab2" x="164" y="130">AI-agent demand</text>
+
+    <line class="tick" x1="220" y1="806" x2="220" y2="950" stroke-width="3" opacity=".7"/>
+    <line class="tick" x1="204" y1="806" x2="236" y2="806" opacity=".7"/>
+    <text class="lab" x="256" y="816">3.6x</text>
+    <text class="lab2"><tspan x="256" y="854">General AI</tspan><tspan x="256" y="888">search</tspan></text>
+  </svg>
+
+  <p class="abs src">Source: Rankability,<br>3,751 keywords, May 2023<br>to May 2026. rankability.com</p>
+
+  <footer class="sig">
+    <img src="assets/rankability-logo-white.png" alt="Rankability">
+    <div class="folio"><span>3 / 6</span>
+      <svg width="62" height="30" viewBox="0 0 62 30"><rect class="t" x="0" y="12" width="2" height="18"/><rect class="t" x="12" y="12" width="2" height="18"/><rect class="t on" x="24" y="0" width="2" height="30"/><rect class="t" x="36" y="12" width="2" height="18"/><rect class="t" x="48" y="12" width="2" height="18"/><rect class="t" x="60" y="12" width="2" height="18"/></svg>
+    </div>
+  </footer>
+</section>
+
+<!-- ============ 4 ============ -->
+<section class="slide" id="s4">
+  <!-- Two tick rows at the same pitch (20.977px); each tick is 0.05x of AEO. AEO = 20 ticks (1x), GEO = 44 ticks (2.2x).
+       The blue tick is GEO's 44th. -->
+  <svg class="abs chart" width="904" height="400" viewBox="0 0 904 400" role="img" aria-label="Tick rows to scale: GEO 44 ticks, AEO 20 ticks, about 2.2 to 1">
+    <text class="lab" x="0" y="30">GEO</text>
+    <text class="lab" x="904" y="30" text-anchor="end">about 2.2x</text>
+    <line x1="0" y1="115" x2="900" y2="115" stroke="#fff" stroke-opacity=".85" stroke-width="110" stroke-dasharray="2 18.977"/>
+    <line class="accent" x1="902" y1="52" x2="902" y2="170"/>
+
+    <text class="lab" x="0" y="250">AEO</text>
+    <line x1="0" y1="335" x2="400.6" y2="335" stroke="#fff" stroke-opacity=".85" stroke-width="110" stroke-dasharray="2 18.977"/>
+    <text class="lab2" x="424" y="345">1x</text>
+  </svg>
+  <p class="abs src">Source: Rankability, 3,751 keywords,<br>June 2022 to May 2026. rankability.com</p>
+
+  <h2 class="h">GEO drew about 2.2x<br>the demand of AEO</h2>
+  <p class="abs sub">Both started near zero in 2023 and leveled off in early 2026</p>
+
+  <footer class="sig">
+    <img src="assets/rankability-logo-white.png" alt="Rankability">
+    <div class="folio"><span>4 / 6</span>
+      <svg width="62" height="30" viewBox="0 0 62 30"><rect class="t" x="0" y="12" width="2" height="18"/><rect class="t" x="12" y="12" width="2" height="18"/><rect class="t" x="24" y="12" width="2" height="18"/><rect class="t on" x="36" y="0" width="2" height="30"/><rect class="t" x="48" y="12" width="2" height="18"/><rect class="t" x="60" y="12" width="2" height="18"/></svg>
+    </div>
+  </footer>
+</section>
+
+<!-- ============ 5 ============ -->
+<section class="slide" id="s5">
+  <h2 class="h">What this<br>doesn’t show</h2>
+
+  <!-- The supporting line is one paragraph on the card; it is broken at its three sentences. -->
+  <div class="abs limits">
+    <p>Search demand is interest, not adoption.</p>
+    <p>Keyword Planner values are bucketed, so read these as trends.</p>
+    <p>Both terms are still small next to SEO.</p>
+  </div>
+
+  <footer class="sig">
+    <img src="assets/rankability-logo-white.png" alt="Rankability">
+    <div class="folio"><span>5 / 6</span>
+      <svg width="62" height="30" viewBox="0 0 62 30"><rect class="t" x="0" y="12" width="2" height="18"/><rect class="t" x="12" y="12" width="2" height="18"/><rect class="t" x="24" y="12" width="2" height="18"/><rect class="t" x="36" y="12" width="2" height="18"/><rect class="t on" x="48" y="0" width="2" height="30"/><rect class="t" x="60" y="12" width="2" height="18"/></svg>
+    </div>
+  </footer>
+</section>
+
+<!-- ============ 6 ============ -->
+<section class="slide" id="s6">
+  <h2 class="h">Decide what<br>you’ll call<br>this work</h2>
+
+  <p class="abs sub">Agree on the name, the scope and the report before a client asks.</p>
+  <p class="abs cta"><span>Read the 7 predictions for 2027.</span>
+    <svg width="56" height="36" viewBox="0 0 56 36" aria-hidden="true" style="overflow:visible"><path class="accent" d="M2 18h48M36 4l15 14-15 14"/></svg>
+  </p>
+
+  <footer class="sig">
+    <img src="assets/rankability-logo-white.png" alt="Rankability">
+    <div class="folio"><span>6 / 6</span>
+      <svg width="62" height="30" viewBox="0 0 62 30"><rect class="t" x="0" y="12" width="2" height="18"/><rect class="t" x="12" y="12" width="2" height="18"/><rect class="t" x="24" y="12" width="2" height="18"/><rect class="t" x="36" y="12" width="2" height="18"/><rect class="t" x="48" y="12" width="2" height="18"/><rect class="t on" x="60" y="0" width="2" height="30"/></svg>
+    </div>
+  </footer>
+</section>
+
+<script>
+  // Slide 3 scale ticks: one per 1x, 0 through 21 (40px each). Pure geometry, no data.
+  (function () {
+    var g = document.getElementById('units'), ns = 'http://www.w3.org/2000/svg';
+    for (var k = 0; k <= 21; k++) {
+      var l = document.createElementNS(ns, 'line'), y = 950 - 40 * k;
+      l.setAttribute('x1', k % 5 === 0 ? 40 : 52); l.setAttribute('x2', 72);
+      l.setAttribute('y1', y); l.setAttribute('y2', y); g.appendChild(l);
+    }
+  })();
+  // ?slide=N shows a single slide (PNG export).
+  (function () {
+    var n = new URLSearchParams(location.search).get('slide');
+    if (!n) return;
+    document.documentElement.classList.add('single');
+    var s = document.getElementById('s' + n); if (s) s.classList.add('show');
+  })();
+  // Font guard: record whether the real Graphik faces loaded; a red banner shows if not.
+  Promise.all([400, 500].map(function (w) { return document.fonts.load(w + ' 40px "Graphik"'); }))
+    .then(function () {
+      var faces = Array.from(document.fonts).filter(function (f) { return /Graphik/.test(f.family); });
+      var ok = faces.length === 2 && faces.every(function (f) { return f.status === 'loaded'; });
+      document.documentElement.dataset.graphik = ok ? 'loaded' : 'missing';
+      document.documentElement.dataset.faces = faces.map(function (f) { return f.weight + ':' + f.status; }).join(' ');
+    });
+</script>
+</body>
+</html>
